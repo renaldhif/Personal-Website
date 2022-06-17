@@ -13,7 +13,7 @@
 <body>
     
     <!-- Header start -->
-        <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <header class="bg-transparent absolute top-0 left-0 w-full flex items-center">
             <div class="container">
                 <div class="flex items-center justify-between relative">
                     <div class="px-4">
@@ -21,10 +21,13 @@
                     </div>
                     <div class="flex items-center px-4">
                         <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                             <span class="hamburger-line"></span>
-                            <span class="hamburger-line"></span>
-                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                         </button>
+
+                        <!-- Nav Hamburger Start-->
+                        <!-- Nav Hamburger End -->
                     </div>
                 </div>
             </div>
@@ -73,7 +76,7 @@
                 <!-- About Me Start -->
                 <div class="w-full px-4 mb-24 text-center md:text-center lg:text-left">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3 ">About Me</h4>
-                    <p class="text-base text-secondary font-normal">I'm an Information Systems student passionate about web development and design, app development and design, business and finance. I achieved a cumulative GPA of 3.88 in my fifth semester at the Dual Degree program ITB STIKOM Bali in partnership with HELP University Malaysia. Due to broadening my expertise, I'm also taking an additional online course. During my spare time, I love to play piano, listen to classical music and orchestra, and read books.</p>
+                    <p class="text-base text-secondary font-normal">I'm an Information Systems student with a passion for web development, app development, and business. I achieved a cumulative GPA of 3.88 in my fifth semester at the Dual Degree program ITB STIKOM Bali in partnership with HELP University Malaysia. Due to broadening my expertise, I'm also taking an additional online course. During my spare time, I love to play piano, listen to classical music and orchestra, and read books.</p>
                 </div>
                 <!-- About Me End -->
 
@@ -147,6 +150,6 @@
         </div>
     </section>
     <!-- About Section End -->
-    <script src="js/script.js"></script>
+    <script src="dist/js/script.js"></script>
 </body>
 </html>
