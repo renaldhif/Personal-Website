@@ -8,7 +8,7 @@ module.exports = {
     },
     extend: {
       // set default colors for all components
-        colors: {
+      colors: {
         // primary: sky-500
         primary: '#0ea5e9',
         // secondary for text: slate 500
@@ -23,7 +23,7 @@ module.exports = {
         light: '#38bdf8',
         // lightest: sky-200
         lightest: '#bae6fd',
-      }
+      },
     },
   },
   plugins: [],

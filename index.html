@@ -6,52 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renaldhi Fahrezi</title>
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Tailwind -->
     <link href="dist/output.css" rel="stylesheet" />
 </head>
 
 <body>
-
     <!-- Header start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-6">Renaldhi Fahrezi</a>
+                    <a href="#home" class="font-bold text-lg text-primary block py-6 lg:text-xl">Renaldhi Fahrezi</a>
                 </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                        <span class="hamburger-line transition duration-400 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-400 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-400 ease-in-out origin-bottom-left"></span>
                     </button>
 
                     <!-- Nav Hamburger Start-->
                     <nav id="nav-menu"
-                        class="hidden absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static bg-white lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        class="hidden absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static bg-white lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:font-medium">
                         <ul class="block lg:flex">
                             <li class="group">
                                 <a href="#home"
-                                    class="text-base text-secondary py-2 mx-8 group-hover:text-primary">Home</a>
+                                    class="text-lg text-secondary py-2 mx-8 group-hover:text-primary group-hover:font-bold">Home</a>
                             </li>
                             <li class="group">
                                 <a href="#about"
-                                    class="text-base text-secondary py-2 mx-8 group-hover:text-primary">About Me</a>
+                                    class="text-lg text-secondary py-2 mx-8 group-hover:text-primary group-hover:font-bold">About Me</a>
                             </li>
                             <li class="group">
-                                <a href="#skills" class="text-base text-secondary py-2 mx-8 group-hover:text-primary">My
+                                <a href="#skills" class="text-lg text-secondary py-2 mx-8 group-hover:text-primary group-hover:font-bold">My
                                     Skills</a>
                             </li>
                             <li class="group">
                                 <a href="#portofolio"
-                                    class="text-base text-secondary py-2 mx-8 group-hover:text-primary">My
+                                    class="text-lg text-secondary py-2 mx-8 group-hover:text-primary group-hover:font-bold">My
                                     Portofolios</a>
                             </li>
                             <li class="group">
                                 <a href="#contact"
-                                    class="text-base text-secondary py-2 mx-8 group-hover:text-primary">Contact Me</a>
+                                    class="text-lg text-secondary py-2 mx-8 group-hover:text-primary group-hover:font-bold">Contact Me</a>
                             </li>
                         </ul>
                     </nav>
@@ -61,161 +65,167 @@
         </div>
     </header>
     <!-- Header end -->
-
-    <!-- Hero Section Start -->
-    <section id="home" class="pt-28">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <!-- Intro Start -->
-                <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-lg font-semibold text-primary md:text-2xl lg:3xl">Hello👋 I am
-                        <span class="block font-bold text-dark text-4xl mt-4 md:text-5xl lg:7xl">Renaldhi
-                            Fahrezi</span>
-                    </h1>
-                    <h2 class="font-semibold text-dark text-xs mt-2 mb-4 md:text-lg lg:text-base">
-                        Front-end Developer | UI/UX Designer | Mobile App Developer
-                    </h2>
-                    <p class="mb-10 font-normal text-secondary md:font-medium lg:font-medium">Information System
-                        Undergraduate Student at ITB STIKOM Bali and HELP University Malaysia</p>
-                    <a href="#"
-                        class="text-base font-semibold text-white bg-primary 
+    <div class="wrapper-bg" style="background-image: url('dist/img/bgdot.png');background-size: cover;">
+        <!-- Hero Section Start -->
+        <section id="home" class="pt-28 bg">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <!-- Intro Start -->
+                    <div class="w-full self-center px-4 lg:w-1/2">
+                        <h1 class="text-lg font-semibold text-primary md:text-2xl lg:text-4xl">Hello<span
+                                class="wavehand">👋</span> I am
+                            <span class="block font-bold text-dark text-4xl mt-4 md:text-5xl lg:text-6xl lg:mt-6"
+                                data-aos="fade-down" data-aos-duration="1500">Renaldhi
+                                Fahrezi</span>
+                        </h1>
+                        <h2 class="font-semibold text-dark text-xs mt-2 mb-4 md:text-lg lg:text-lg lg:mt-4"
+                            data-aos="fade-right" data-aos-duration="2000">
+                            Front-end Developer | UI/UX Designer | Mobile App Developer
+                        </h2>
+                        <p class="mb-10 font-normal text-secondary md:font-medium lg:font-medium lg:text-base"
+                            data-aos="fade-up" data-aos-duration="2500">Information System
+                            Undergraduate Student at ITB STIKOM Bali and HELP University Malaysia</p>
+                        <a href="#contact"
+                            class="text-base font-semibold text-white bg-primary 
                     py-3 px-6 rounded-full hover:shadow-lg hover:opacity-75 transisition duration-300 ease-in-out">Contact
-                        Me!</a>
-                </div>
-                <!-- Intro End -->
+                            Me!</a>
+                    </div>
+                    <!-- Intro End -->
 
-                <!-- Pic Start -->
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:mt-9 lg:right-0">
-                        <img src="dist/img/newpp.png" alt="Renaldhi Fahrezi's photo" class="max-w-max mx-auto">
-                        <span class="absolute -right-20 bottom-0 -z-10 translate-x-1 md:right-40 lg:right-24">
-                            <svg width="500" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#0ea5e9"
-                                    d="M54.6,-43.1C70.4,-38.7,82.7,-19.4,81.3,-1.4C80,16.6,64.9,33.2,49,47.9C33.2,62.7,16.6,75.6,2.2,73.4C-12.2,71.2,-24.4,53.9,-37.4,39.2C-50.3,24.4,-64,12.2,-64.2,-0.2C-64.4,-12.6,-51.2,-25.3,-38.2,-29.6C-25.3,-34,-12.6,-30,3.4,-33.4C19.4,-36.8,38.7,-47.4,54.6,-43.1Z"
-                                    transform="translate(100 100) scale(0.9)" />
-                            </svg>
-                        </span>
+                    <!-- Pic Start -->
+                    <div class="w-full self-end px-4 lg:w-1/2">
+                        <div class="relative mt-10 lg:mt-9 lg:right-0">
+                            <img src="dist/img/newpp.png" alt="Renaldhi Fahrezi's photo" class="max-w-max mx-auto" data-aos="fade-left" data-aos-duration="2500">
+                        </div>
+                    </div>
+                    <!-- Pic End -->
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- About Section Start -->
+        <section id="about" class="pt-24 mb-10 md:my-14 lg:pt-24 lg:mb-0" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-full px-4 mb-2 text-center md:text-center md:mb-14  lg:text-left">
+                        <h4 class="font-bold text-primary text-lg mb-3 lg:text-2xl">About Me</h4>
+                        <p class="text-base text-secondary font-normal">I'm an Information Systems student with a
+                            passion
+                            for web development, app development, and business. I achieved a cumulative GPA of 3.88 in
+                            my
+                            fifth semester at the Dual Degree program ITB STIKOM Bali in partnership with HELP
+                            University
+                            Malaysia. Due to broadening my expertise, I'm also taking an additional online course.
+                            During my
+                            spare time, I love to play piano, listen to classical music and orchestra, and read books.
+                        </p>
                     </div>
                 </div>
-                <!-- Pic End -->
             </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Skills Section Start -->
+        <section id="skills" class="pt-24">
+            <div class="w-full px-4 text-center">
+                <h4 class="font-bold text-primary text-lg mb-2 lg:text-2xl" data-aos="fade-up" data-aos-duration="1500">
+                    My Skills</h4>
+                <div class="flex flex-wrap justify-center mt-10" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="m-6">
+                        <img src="dist/img/html200.png" alt="HTML" width="100px">
+                    </div>
+                    <div class="m-6">
+                        <img src="dist/img/css200.png" alt="CSS" width="100px">
+                    </div>
+                    <div class="m-6">
+                        <img src="dist/img/js200.png" alt="JavaScript" width="100px">
+                    </div>
+                    <div class="m-6">
+                        <img src="dist/img/java200.png" alt="Java" width="100px">
+                    </div>
+                    <div class="m-6">
+                        <img src="dist/img/python200.png" alt="Python" width="80px">
+                    </div>
+                    <div class="m-6">
+                        <img src="dist/img/php200.png" alt="PHP" width="100px">
+                    </div>
+                    <div class="m-6">
+                        <img src="dist/img/tailwind200.png" alt="Tailwind" width="100px">
+                    </div>
+                    <div class="m-6">
+                        <img src="dist/img/figma200.png" alt="Figma" width="100px">
+                    </div>
+                </div>
+
+                <h2 class="font-bold uppercase text-primary text-md mt-10 mb-3 lg:text-xl" data-aos="fade-up"
+                    data-aos-duration="2000">Coming Soon</h2>
+                <div class="flex flex-wrap mt-10 justify-center" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="m-6">
+                        <img src="dist/img/react200.png" alt="React" width="100px">
+                    </div>
+                    <div class="m-6">
+                        <img src="dist/img/flutter200.png" alt="Flutter" width="100px">
+                    </div>
+                    <div class="m-6">
+                        <img src="dist/img/laravel200.png" alt="Laravel" width="100px">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills section End -->
+        <!-- Wave Divider by svgwave.in Start-->
+        <div class="wave">
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg"
+                class="transition duration-[5000] ease-in-out delay-[2000]">
+                <style>
+                    .path-0 {
+                        animation: pathAnim-0 6s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                    }
+
+                    @keyframes pathAnim-0 {
+                        0% {
+                            d: path("M 0,400 C 0,400 0,200 0,200 C 80.57142857142858,220.35714285714286 161.14285714285717,240.71428571428572 300,218 C 438.85714285714283,195.28571428571428 635.9999999999999,129.50000000000003 764,134 C 892.0000000000001,138.49999999999997 950.8571428571429,213.28571428571428 1052,236 C 1153.142857142857,258.7142857142857 1296.5714285714284,229.35714285714286 1440,200 C 1440,200 1440,400 1440,400 Z");
+                        }
+
+                        25% {
+                            d: path("M 0,400 C 0,400 0,200 0,200 C 109.28571428571428,196.89285714285714 218.57142857142856,193.78571428571428 335,201 C 451.42857142857144,208.21428571428572 574.9999999999999,225.74999999999997 715,216 C 855.0000000000001,206.25000000000003 1011.4285714285713,169.21428571428572 1135,162 C 1258.5714285714287,154.78571428571428 1349.2857142857142,177.39285714285714 1440,200 C 1440,200 1440,400 1440,400 Z");
+                        }
+
+                        50% {
+                            d: path("M 0,400 C 0,400 0,200 0,200 C 99.35714285714286,213.96428571428572 198.71428571428572,227.92857142857142 319,231 C 439.2857142857143,234.07142857142858 580.4999999999999,226.25000000000003 709,221 C 837.5000000000001,215.74999999999997 953.2857142857144,213.07142857142858 1073,210 C 1192.7142857142856,206.92857142857142 1316.3571428571427,203.46428571428572 1440,200 C 1440,200 1440,400 1440,400 Z");
+                        }
+
+                        75% {
+                            d: path("M 0,400 C 0,400 0,200 0,200 C 133.42857142857142,206.21428571428572 266.85714285714283,212.42857142857142 371,208 C 475.14285714285717,203.57142857142858 550,188.50000000000003 667,178 C 784,167.49999999999997 943.1428571428571,161.57142857142856 1079,166 C 1214.857142857143,170.42857142857144 1327.4285714285716,185.21428571428572 1440,200 C 1440,200 1440,400 1440,400 Z");
+                        }
+
+                        100% {
+                            d: path("M 0,400 C 0,400 0,200 0,200 C 80.57142857142858,220.35714285714286 161.14285714285717,240.71428571428572 300,218 C 438.85714285714283,195.28571428571428 635.9999999999999,129.50000000000003 764,134 C 892.0000000000001,138.49999999999997 950.8571428571429,213.28571428571428 1052,236 C 1153.142857142857,258.7142857142857 1296.5714285714284,229.35714285714286 1440,200 C 1440,200 1440,400 1440,400 Z");
+                        }
+                    }
+                </style>
+                <path
+                    d="M 0,400 C 0,400 0,200 0,200 C 80.57142857142858,220.35714285714286 161.14285714285717,240.71428571428572 300,218 C 438.85714285714283,195.28571428571428 635.9999999999999,129.50000000000003 764,134 C 892.0000000000001,138.49999999999997 950.8571428571429,213.28571428571428 1052,236 C 1153.142857142857,258.7142857142857 1296.5714285714284,229.35714285714286 1440,200 C 1440,200 1440,400 1440,400 Z"
+                    stroke="none" stroke-width="0" fill="#0c4a6eff"
+                    class="transition-all duration-[5000] ease-in-out delay-[2000] path-0"></path>
+            </svg>
         </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- About Section Start -->
-    <section id="about" class="mt-12 mb-10 md:my-14 lg:scroll-mt-14 lg:mb-0">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-2 text-center md:text-center md:mb-14  lg:text-left">
-                    <h4 class="font-bold  text-primary text-lg mb-3 ">About Me</h4>
-                    <p class="text-base text-secondary font-normal">I'm an Information Systems student with a passion
-                        for web development, app development, and business. I achieved a cumulative GPA of 3.88 in my
-                        fifth semester at the Dual Degree program ITB STIKOM Bali in partnership with HELP University
-                        Malaysia. Due to broadening my expertise, I'm also taking an additional online course. During my
-                        spare time, I love to play piano, listen to classical music and orchestra, and read books.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Skills Section Start -->
-    <section id="skills" class="pt-10">
-        <div class="w-full px-4 text-center">
-            <h4 class="font-bold text-primary text-lg mb-2">My Skills</h4>
-            <div class="flex flex-wrap justify-center mt-10">
-                <div class="m-6">
-                    <img src="dist/img/html200.png" alt="HTML" width="100px">
-                </div>
-                <div class="m-6">
-                    <img src="dist/img/css200.png" alt="CSS" width="100px">
-                </div>
-                <div class="m-6">
-                    <img src="dist/img/js200.png" alt="JavaScript" width="100px">
-                </div>
-                <div class="m-6">
-                    <img src="dist/img/java200.png" alt="Java" width="100px">
-                </div>
-                <div class="m-6">
-                    <img src="dist/img/python200.png" alt="Python" width="80px">
-                </div>
-                <div class="m-6">
-                    <img src="dist/img/php200.png" alt="PHP" width="100px">
-                </div>
-                <div class="m-6">
-                    <img src="dist/img/tailwind200.png" alt="Tailwind" width="100px">
-                </div>
-                <div class="m-6">
-                    <img src="dist/img/figma200.png" alt="Figma" width="100px">
-                </div>
-            </div>
-
-            <h2 class="font-bold uppercase text-primary text-md mt-10 mb-3">Coming Soon</h2>
-            <div class="flex flex-wrap mt-10 justify-center">
-                <div class="m-6">
-                    <img src="dist/img/react200.png" alt="React" width="100px">
-                </div>
-                <div class="m-6">
-                    <img src="dist/img/flutter200.png" alt="Flutter" width="100px">
-                </div>
-                <div class="m-6">
-                    <img src="dist/img/laravel200.png" alt="Laravel" width="100px">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Skills section End -->
-
-    <!-- Wave Divider by svgwave.in Start-->
-    <div class="wave">
-        <svg width="100%" height="100%" id="svg" viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg"
-            class="transition duration-[5000] ease-in-out delay-[2000]">
-            <style>
-                .path-0 {
-                    animation: pathAnim-0 6s;
-                    animation-timing-function: linear;
-                    animation-iteration-count: infinite;
-                }
-
-                @keyframes pathAnim-0 {
-                    0% {
-                        d: path("M 0,400 C 0,400 0,200 0,200 C 80.57142857142858,220.35714285714286 161.14285714285717,240.71428571428572 300,218 C 438.85714285714283,195.28571428571428 635.9999999999999,129.50000000000003 764,134 C 892.0000000000001,138.49999999999997 950.8571428571429,213.28571428571428 1052,236 C 1153.142857142857,258.7142857142857 1296.5714285714284,229.35714285714286 1440,200 C 1440,200 1440,400 1440,400 Z");
-                    }
-
-                    25% {
-                        d: path("M 0,400 C 0,400 0,200 0,200 C 109.28571428571428,196.89285714285714 218.57142857142856,193.78571428571428 335,201 C 451.42857142857144,208.21428571428572 574.9999999999999,225.74999999999997 715,216 C 855.0000000000001,206.25000000000003 1011.4285714285713,169.21428571428572 1135,162 C 1258.5714285714287,154.78571428571428 1349.2857142857142,177.39285714285714 1440,200 C 1440,200 1440,400 1440,400 Z");
-                    }
-
-                    50% {
-                        d: path("M 0,400 C 0,400 0,200 0,200 C 99.35714285714286,213.96428571428572 198.71428571428572,227.92857142857142 319,231 C 439.2857142857143,234.07142857142858 580.4999999999999,226.25000000000003 709,221 C 837.5000000000001,215.74999999999997 953.2857142857144,213.07142857142858 1073,210 C 1192.7142857142856,206.92857142857142 1316.3571428571427,203.46428571428572 1440,200 C 1440,200 1440,400 1440,400 Z");
-                    }
-
-                    75% {
-                        d: path("M 0,400 C 0,400 0,200 0,200 C 133.42857142857142,206.21428571428572 266.85714285714283,212.42857142857142 371,208 C 475.14285714285717,203.57142857142858 550,188.50000000000003 667,178 C 784,167.49999999999997 943.1428571428571,161.57142857142856 1079,166 C 1214.857142857143,170.42857142857144 1327.4285714285716,185.21428571428572 1440,200 C 1440,200 1440,400 1440,400 Z");
-                    }
-
-                    100% {
-                        d: path("M 0,400 C 0,400 0,200 0,200 C 80.57142857142858,220.35714285714286 161.14285714285717,240.71428571428572 300,218 C 438.85714285714283,195.28571428571428 635.9999999999999,129.50000000000003 764,134 C 892.0000000000001,138.49999999999997 950.8571428571429,213.28571428571428 1052,236 C 1153.142857142857,258.7142857142857 1296.5714285714284,229.35714285714286 1440,200 C 1440,200 1440,400 1440,400 Z");
-                    }
-                }
-            </style>
-            <path
-                d="M 0,400 C 0,400 0,200 0,200 C 80.57142857142858,220.35714285714286 161.14285714285717,240.71428571428572 300,218 C 438.85714285714283,195.28571428571428 635.9999999999999,129.50000000000003 764,134 C 892.0000000000001,138.49999999999997 950.8571428571429,213.28571428571428 1052,236 C 1153.142857142857,258.7142857142857 1296.5714285714284,229.35714285714286 1440,200 C 1440,200 1440,400 1440,400 Z"
-                stroke="none" stroke-width="0" fill="#0c4a6eff"
-                class="transition-all duration-[5000] ease-in-out delay-[2000] path-0"></path>
-        </svg>
+        <!-- Wave Divider End-->
     </div>
-    <!-- Wave Divider End-->
 
     <!-- Portofolio section start -->
-    <section id="portofolio" class="pb-10 pt-0 bg-darkest flex">
+    <section id="portofolio" class="pb-10 pt-14 bg-darkest flex">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-bold  text-white text-lg mb-8 pt-6 lg:pt-0">Portofolios</h4>
-                    <h2 class="font-bold text-white text-2xl mb-4">Latest Portofolios</h2>
-                    <p class="font-medium text-md text-tertiary">
+                    <h4 class="font-bold  text-white text-lg mb-8 pt-8 lg:text-2xl" data-aos="fade-up"
+                        data-aos-duration="1000">Portofolios</h4>
+                    <h2 class="font-bold text-white text-2xl mb-4 lg:text-3xl" data-aos="fade-up"
+                        data-aos-duration="1500">Latest Portofolios</h2>
+                    <p class="font-medium text-tertiary lg:text-xl" data-aos="fade-up" data-aos-duration="1500">
                         Here are some of my latest portofolios.
                     </p>
                 </div>
@@ -224,54 +234,116 @@
             <div class="w-full px-4 flex flex-wrap justify-center">
                 <!-- 1 -->
                 <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
+                    <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-right" data-aos-duration="1500">
                         <img src="dist/img/personalweb.png" alt="Renaldhif's Personal Website" class="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-white mt-5 mb-3">My Personal Website</h3>
-                    <p class="font-medium text-base text-tertiary">This is my personal website that I made using tailwind css on June 2022</p>
-                    
+                    <h3
+                        class="font-semibold text-xl text-white mt-5 mb-3 text-center hover:text-primary hover:font-extrabold transition ease-in-out duration-300">
+                        <a href="#home">Personal Website</a></h3>
+                    <p class="font-medium text-base text-tertiary text-center">This is my personal website that I made
+                        using TailwindCSS and AOS on June 2022</p>
+
                 </div>
                 <!-- 2 -->
                 <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
+                    <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-left" data-aos-duration="1500">
                         <img src="dist/img/starpianistbali.png" alt="Star Pianist Bali" class="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-white mt-5 mb-3">My Personal Website</h3>
-                    <p class="font-medium text-base text-tertiary">This is my personal website that I made using tailwind css on June 2022</p>
-                    
+                    <h3
+                        class="font-semibold text-xl text-white mt-5 mb-3 text-center hover:text-primary hover:font-extrabold transition ease-in-out duration-300">
+                        <a href="https://renaldhif.github.io">College Assignment Website</a></h3>
+                    <p class="font-medium text-base text-tertiary text-center">This is my college assignment website
+                        that I made using native HTML CSS JS on 2020</p>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- Portofolio section End -->
 
+    <!-- Wave Top Divier Start -->
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1200 275" xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-[5000] ease-in-out delay-[2000]">
+        <style>
+            .path-0 {
+                animation: pathAnim-0 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes pathAnim-0 {
+                0% {
+                    d: path("M 0,400 C 0,400 0,200 0,200 C 93.78571428571428,164.60714285714286 187.57142857142856,129.21428571428572 312,141 C 436.42857142857144,152.78571428571428 591.4999999999999,211.75 726,240 C 860.5000000000001,268.25 974.4285714285713,265.7857142857143 1090,254 C 1205.5714285714287,242.21428571428572 1322.7857142857142,221.10714285714286 1440,200 C 1440,200 1440,400 1440,400 Z");
+                }
+
+                25% {
+                    d: path("M 0,400 C 0,400 0,200 0,200 C 141.89285714285714,191.5 283.7857142857143,183 396,181 C 508.2142857142857,179 590.75,183.5 685,206 C 779.25,228.5 885.2142857142858,269 1013,271 C 1140.7857142857142,273 1290.392857142857,236.5 1440,200 C 1440,200 1440,400 1440,400 Z");
+                }
+
+                50% {
+                    d: path("M 0,400 C 0,400 0,200 0,200 C 119.28571428571428,203.75 238.57142857142856,207.5 344,220 C 449.42857142857144,232.5 541.0000000000001,253.75 665,245 C 788.9999999999999,236.25 945.4285714285716,197.49999999999997 1080,185 C 1214.5714285714284,172.50000000000003 1327.2857142857142,186.25 1440,200 C 1440,200 1440,400 1440,400 Z");
+                }
+
+                75% {
+                    d: path("M 0,400 C 0,400 0,200 0,200 C 107.57142857142858,155.17857142857144 215.14285714285717,110.35714285714286 331,132 C 446.85714285714283,153.64285714285714 571,241.75 690,266 C 809,290.25 922.8571428571429,250.64285714285714 1047,229 C 1171.142857142857,207.35714285714286 1305.5714285714284,203.67857142857144 1440,200 C 1440,200 1440,400 1440,400 Z");
+                }
+
+                100% {
+                    d: path("M 0,400 C 0,400 0,200 0,200 C 93.78571428571428,164.60714285714286 187.57142857142856,129.21428571428572 312,141 C 436.42857142857144,152.78571428571428 591.4999999999999,211.75 726,240 C 860.5000000000001,268.25 974.4285714285713,265.7857142857143 1090,254 C 1205.5714285714287,242.21428571428572 1322.7857142857142,221.10714285714286 1440,200 C 1440,200 1440,400 1440,400 Z");
+                }
+            }
+        </style>
+        <path
+            d="M 0,400 C 0,400 0,200 0,200 C 93.78571428571428,164.60714285714286 187.57142857142856,129.21428571428572 312,141 C 436.42857142857144,152.78571428571428 591.4999999999999,211.75 726,240 C 860.5000000000001,268.25 974.4285714285713,265.7857142857143 1090,254 C 1205.5714285714287,242.21428571428572 1322.7857142857142,221.10714285714286 1440,200 C 1440,200 1440,400 1440,400 Z"
+            stroke="none" stroke-width="0" fill="#0c4a6eff"
+            class="transition duration-[5000] ease-in-out delay-[2000] path-0" transform="rotate(-180 720 200)"></path>
+    </svg>
+    <!-- Wave Bot Divider End -->
+
     <!-- Contact section start -->
-    <section id="contact" class="pt-16">
+    <section id="contact" class="pt-24">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-bold  text-primary text-lg mb-4 pt-6 lg:pt-0">Contact Me</h4>
-                    <p class="font-medium text-md text-secondary">
+                    <h4 class="font-bold  text-primary text-lg mb-4 pt-6 lg:pt-0 lg:text-2xl" data-aos="fade-up"
+                        data-aos-duration="1000">Contact Me</h4>
+                    <p class="font-medium text-secondary text-base" data-aos="fade-up" data-aos-duration="1500">
                         If you would like to offer me a project or just want to say hello,<br>feel free to contact me!
                     </p>
                 </div>
             </div>
-            <form action="">
+            <form action="https://formsubmit.co/renaldhifahrezi48@gmail.com" method="POST">
                 <div class="w-full lg:w-2/3 lg:mx-auto">
-                    <div class="w-full px-4 mb-8">
+                    <div class="w-full px-4 mb-8" data-aos="fade-up" data-aos-duration="1750">
                         <label for="name" class="text-base text-primary font-bold">Name</label>
-                        <input type="text" id="name" class="w-full bg-slate-200 text-slate-800 p-3 rounded-md ring-1 focus:ring-primary focus:ring-2" placeholder="John Doe">
+                        <input type="text" id="name" name="name"
+                            class="w-full bg-slate-200 text-slate-800 p-3 rounded-md 
+                            ring-1 ring-primary ring-opacity-50
+                            focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary
+                            disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none"
+                            placeholder="John Doe">
                     </div>
-                    <div class="w-full px-4 mb-8">
+                    <div class="w-full px-4 mb-8" data-aos="fade-up" data-aos-duration="2000">
                         <label for="email" class="text-base text-primary font-bold">Email</label>
-                        <input type="email" id="email" class="w-full bg-slate-200 text-slate-800 p-3 rounded-md ring-1 focus:ring-primary focus:ring-2" placeholder="johndoe@gmail.com">
+                        <input type="email" id="email" name="email"
+                            class="w-full bg-slate-200 text-slate-800 p-3 rounded-md 
+                            ring-1 ring-primary ring-opacity-50
+                            focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary
+                            disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none"
+                            placeholder="johndoe@gmail.com">
                     </div>
-                    <div class="w-full px-4 mb-8">
+                    <div class="w-full px-4 mb-8" data-aos="fade-up" data-aos-duration="2250">
                         <label for="message" class="text-base text-primary font-bold">Message</label>
-                        <textarea id="message" class="w-full bg-slate-200 text-slate-800 p-3 rounded-md ring-1 focus:ring-primary focus:ring-2 h-32" placeholder="Message"></textarea>
+                        <textarea id="message" name="message"
+                            class="w-full bg-slate-200 text-slate-800 p-3 rounded-md 
+                            ring-1 ring-primary ring-opacity-50
+                            focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary
+                            disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none h-32"
+                            placeholder="Message"></textarea>
                     </div>
                     <div class="w-full px-4">
-                        <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-75 hover:shadow-lg transisition duration-300 ease-in-out">Send</button>
+                        <button
+                            class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-75 hover:shadow-lg transisition duration-500 ease-in-out" data-aos="fade-up" data-aos-duration="2500">Send</button>
                     </div>
                 </div>
             </form>
@@ -327,7 +399,7 @@
             <div class="flex items-center justify-center">
                 <!-- Github -->
                 <a href="https://github.com/renaldhif" target="_blank"
-                    class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-tertiary hover:border-primary hover:bg-primary hover:text-white text-tertiary">
+                    class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-tertiary hover:border-white hover:bg-white hover:text-darkest text-tertiary transition ease-in-out duration-500">
                     <svg role="img" width="25px" class="fill-current" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <title>GitHub</title>
@@ -337,7 +409,7 @@
                 </a>
                 <!-- Instagram -->
                 <a href="https://instagram.com/renaldhif" target="_blank"
-                    class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-tertiary hover:border-primary hover:bg-primary hover:text-white text-tertiary">
+                    class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-tertiary hover:border-white hover:bg-white hover:text-darkest text-tertiary transition ease-in-out duration-500">
                     <svg role="img" width="23px" class="fill-current" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <title>Instagram</title>
@@ -347,7 +419,7 @@
                 </a>
                 <!-- LinkedIn -->
                 <a href="https://linkedin.com/renaldhif" target="_blank"
-                    class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-tertiary hover:border-primary hover:bg-primary hover:text-white text-tertiary">
+                    class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-tertiary hover:border-white hover:bg-white hover:text-darkest text-tertiary transition ease-in-out duration-500">
                     <svg role="img" width="21" class="fill-current" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <title>LinkedIn</title>
@@ -359,24 +431,32 @@
         </div>
     </section>
     <!-- Socmed Section End -->
-    
+
     <!-- Footer Section Start -->
     <footer class="bg-darkest pt-12">
         <div class="container ">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-12 pt-8 text-white text-center border-t">
                     <p>Copyright © 2022 Renaldhi Fahrezi | All Rights Reserved.</p>
-                    <p>Made with <span class="love text-red-500">❤</span> in Indonesia using Tailwind CSS</p>
+                    <p>Made with <span class="love text-red-500">❤</span> in Indonesia using Tailwind CSS and AOS</p>
                     <br>
-                    <p>For my Indonesian visitor, you can support me by buy me a coffee <a href="https://saweria.co/renaldhif" target="_blank" class="saweria italic hover:font-bold">here</a> !</p>
+                    <p>For my Indonesian visitor, you can support me by buy me a coffee <a
+                            href="https://saweria.co/renaldhif" target="_blank"
+                            class="hover:font-extrabold hover:text-primary">here</a> !</p>
                 </div>
             </div>
         </div>
-        
+
 
     </footer>
     <!-- Footer Section End -->
+    <!-- Navbar and Hamburger Script -->
     <script src="dist/js/script.js"></script>
+    <!-- AOS Init -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
