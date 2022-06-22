@@ -9,9 +9,14 @@ hamburger.addEventListener('click', () => {
 });
 
 // navbar fixed
-window.onscroll = () => {
+function navbarFix(){
     const header = document.querySelector('header');
-    this.scrollY > 20 ? header.classList.add('navbar-fixed') : header.classList.remove('navbar-fixed');
+    if (this.scrollY > 20){
+        header.classList.add('navbar-fixed'); 
+    } 
+    else{
+        header.classList.remove('navbar-fixed');
+    }
 }
 
 // Back to Top Button
@@ -20,6 +25,7 @@ const mybutton = document.getElementById("btn-back-to-top");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = () => {
     scrollFunction();
+    navbarFix();
 };
 
 function scrollFunction() {
