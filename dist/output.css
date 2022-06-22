@@ -1478,23 +1478,18 @@ body{
     line-height: 2.25rem;
   }
 
-  .lg\:font-medium {
-    font-weight: 500;
-  }
-
   .lg\:font-extrabold {
     font-weight: 800;
+  }
+
+  .lg\:font-medium {
+    font-weight: 500;
   }
 
   .lg\:shadow-none {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .lg\:hover\:text-darkest:hover {
-    --tw-text-opacity: 1;
-    color: rgb(12 74 110 / var(--tw-text-opacity));
   }
 
   .lg\:hover\:text-dark:hover {
